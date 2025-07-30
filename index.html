@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <!-- load in the p5 core library -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.js"></script>
+
+    <!-- load in the p5 sound library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.js"></script>
+
+    <!-- your custom sketch code -->
+    <script src="sketch.js"></script>
+
+    <!-- custom CSS styles for this page -->
+    <style>
+      body {
+        font-family: Verdana, sans-serif;
+        background-image: linear-gradient(to right, rgb(83, 36, 154), rgb(174, 14, 140));
+      }
+
+      h1 {
+        color: rgb(205,181,255);
+        letter-spacing: 15px;
+        text-align: center;
+        margin-top: 10vh;
+      }
+
+      p {
+        text-align: center;
+        color: rgb(205,181,255);
+      }
+
+      #canvas_container {margin: auto;
+        text-align: center;
+        margin-top: 8vh;
+        margin-bottom: 12vh;
+      }
+
+      #description {
+        margin: auto;     
+        margin-bottom: 10vh;
+        padding: 15px;
+        width: 60%;
+        height: 12%;
+        background-color: white;
+        opacity: 0.5;
+        color: rgb(174, 14, 140);
+        border-radius: 25px;
+      }
+
+  </style>
+
+  </head>
+  <body>
+    <h1>SPACE BREAKOUT</h1>
+
+    <p>Directions below</p>
+
+    <div id="canvas_container"></div>
+
+    <div id="description">
+      <h2 style="text-align: center;">HOW TO PLAY</h2>
+      <p style="color: rgb(174, 14, 140)">
+        Click on the game screen with your mouse to begin. Control the paddle at the bottom of the screen using the A and D keys on the keyboard (A = left, D = right). The goal of the game is to hit the ball with the paddle to collect as many treasures as possible before the ball goes out of play.
+      </p>
+    </div>
+    
+  </body>
+</html>
