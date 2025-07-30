@@ -1,69 +1,82 @@
 <!doctype html>
 <html lang="en-us">
-  <head>
-    <!-- p5.js libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.js"></script>
-    <script src="sketch.js"></script>
+<head>
+  <!-- p5.js libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.js"></script>
+  <script src="sketch.js"></script>
 
-    <style>
-      body {
-        font-family: Verdana, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-image: linear-gradient(to right, rgb(83, 36, 154), rgb(174, 14, 140));
-        color: rgb(205,181,255);
-      }
+  <style>
+    body {
+      font-family: Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: linear-gradient(to right, rgb(83, 36, 154), rgb(174, 14, 140));
+      color: rgb(205, 181, 255);
+    }
 
-      h1 {
-        text-align: center;
-        font-size: 3em;
-        letter-spacing: 10px;
-        margin-top: 8vh;
-        margin-bottom: 2vh;
-      }
+    h1 {
+      text-align: center;
+      font-size: 3em;
+      letter-spacing: 10px;
+      margin-top: 8vh;
+      margin-bottom: 2vh;
+    }
 
-      #canvas_container {
-        text-align: center;
-        margin: 4vh auto;
-      }
+    #canvas_container {
+      text-align: center;
+      margin: 4vh auto;
+    }
 
+    #description {
+      max-width: 800px;
+      margin: 0 auto 10vh auto;
+      padding: 2rem 2.5rem;
+      background-color: rgba(255, 255, 255, 0.07);
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    #description h2 {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 1rem;
+      color: rgb(255, 228, 255);
+    }
+
+    #description p {
+      font-size: 1.1em;
+      line-height: 1.8;
+      color: rgb(240, 225, 255);
+      text-align: justify;
+      text-align-last: center;
+    }
+
+    @media (max-width: 600px) {
       #description {
-        max-width: 700px;
-        margin: 0 auto 10vh auto;
-        padding: 2rem;
-        background-color: rgba(255, 255, 255, 0.05);
-        border-radius: 12px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.2);
-      }
-
-      #description h2 {
-        text-align: center;
-        font-size: 1.8em;
-        margin-bottom: 1rem;
-        color: rgb(255, 228, 255);
+        padding: 1.5rem;
+        margin: 0 1rem 10vh 1rem;
       }
 
       #description p {
-        font-size: 1.1em;
-        line-height: 1.6;
-        color: rgb(230, 210, 255);
-        text-align: center;
-        margin: 0 auto;
+        font-size: 1em;
+        text-align: left;
       }
-    </style>
-  </head>
+    }
+  </style>
+</head>
 
-  <body>
-    <h1>SPACE BREAKOUT</h1>
+<body>
+  <h1>SPACE BREAKOUT</h1>
 
-    <div id="canvas_container"></div>
+  <div id="canvas_container"></div>
 
-    <div id="description">
-      <h2>HOW TO PLAY</h2>
-      <p>
-        Click anywhere on the screen to start. Use the <strong>A</strong> (left) and <strong>D</strong> (right) keys to move your paddle. Keep the ball bouncing to collect treasures and increase your score. The game ends if the ball drops out of play!
-      </p>
-    </div>
-  </body>
+  <div id="description">
+    <h2>HOW TO PLAY</h2>
+    <p>
+      Click anywhere on the screen to begin the game.<br /><br />
+      Use the <strong>A</strong> key to move the paddle left, and the <strong>D</strong> key to move it right. Keep the ball in play by bouncing it with the paddle. Try to collect as many floating treasures as possible. The game ends if you miss the ball!
+    </p>
+  </div>
+</body>
 </html>
