@@ -1,61 +1,69 @@
 <!doctype html>
 <html lang="en-us">
   <head>
-    <!-- load in the p5 core library -->
+    <!-- p5.js libraries -->
     <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.js"></script>
-
-    <!-- load in the p5 sound library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.js"></script>
-
-    <!-- your custom sketch code -->
     <script src="sketch.js"></script>
 
-    <!-- custom CSS styles for this page -->
     <style>
       body {
         font-family: Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
         background-image: linear-gradient(to right, rgb(83, 36, 154), rgb(174, 14, 140));
+        color: rgb(205,181,255);
       }
 
       h1 {
-        color: rgb(205,181,255);
-        letter-spacing: 15px;
         text-align: center;
-        margin-top: 10vh;
-      }
-
-      p {
-        text-align: center;
-        color: rgb(205,181,255);
-      }
-
-      #canvas_container {margin: auto;
-        text-align: center;
+        font-size: 3em;
+        letter-spacing: 10px;
         margin-top: 8vh;
-        margin-bottom: 8vh;
+        margin-bottom: 2vh;
+      }
+
+      #canvas_container {
+        text-align: center;
+        margin: 4vh auto;
       }
 
       #description {
-        margin: auto;     
-        margin-bottom: 15vh;
-        padding: 15px;
-        color: white;
+        max-width: 700px;
+        margin: 0 auto 10vh auto;
+        padding: 2rem;
+        background-color: rgba(255, 255, 255, 0.05);
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
       }
 
-  </style>
+      #description h2 {
+        text-align: center;
+        font-size: 1.8em;
+        margin-bottom: 1rem;
+        color: rgb(255, 228, 255);
+      }
 
+      #description p {
+        font-size: 1.1em;
+        line-height: 1.6;
+        color: rgb(230, 210, 255);
+        text-align: center;
+        margin: 0 auto;
+      }
+    </style>
   </head>
+
   <body>
     <h1>SPACE BREAKOUT</h1>
 
     <div id="canvas_container"></div>
 
     <div id="description">
-      <h2 style="text-align: center;">HOW TO PLAY</h2>
+      <h2>HOW TO PLAY</h2>
       <p>
-        Click on the game screen with your mouse to begin. Control the paddle at the bottom of the screen using the A and D keys on the keyboard (A = left, D = right). The goal of the game is to hit the ball with the paddle to collect as many treasures as possible before the ball goes out of play.
+        Click anywhere on the screen to start. Use the <strong>A</strong> (left) and <strong>D</strong> (right) keys to move your paddle. Keep the ball bouncing to collect treasures and increase your score. The game ends if the ball drops out of play!
       </p>
     </div>
-    
   </body>
 </html>
